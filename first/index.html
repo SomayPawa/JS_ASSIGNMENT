@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Department</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #EEE5E9;
+            color: #08415C;
+        }
+        h1, h2 {
+            color: #08415C;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            border: 1px solid #6B818C;
+            border-radius: 4px;
+            width: 70%;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #08415C;
+            color: #FFF;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #6B818C;
+        }
+        .destination-list, .favorite-list {
+            margin: 20px 0;
+        }
+        .destination, .favorite {
+            border: 1px solid #6B818C;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            background-color: #F1BF98;
+        }
+        .destination button, .favorite button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #08415C;
+            color: #FFF;
+            cursor: pointer;
+        }
+        .destination button:hover, .favorite button:hover {
+            background-color: #6B818C;
+        }
+        .weather-info {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #08415C;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tourism Department</h1>
+
+    <h2>Search for City Weather</h2>
+    <div class="search-bar">
+        <input type="text" id="city-search-input" placeholder="Enter city name...">
+        <button onclick="searchCityWeather()">Search Weather</button>
+    </div>
+    <div class="city-weather-info" id="city-weather-info">
+
+    </div>
+
+    <div class="destination-list" id="destination-list">
+
+    </div>
+
+    <h2>Favorites</h2>
+    <div class="favorite-list" id="favorite-list">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
